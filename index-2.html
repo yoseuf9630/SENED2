@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SENED - Humanitarian Relief Association">
+
+    <!-- ========== Page Title ========== -->
+    <title>SENED - Humanitarian Relief Association</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-charity-set.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900" rel="stylesheet">
+
+</head>
+
+<!--YUSUF START - media-->
+<div class="social-buttons">
+    <a href="https://www.facebook.com/seneddernegi" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/dernegisened" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://wa.me/+905528008880" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://twitter.com/dernegisened" target="_blank">
+      <i class="fab fa-twitter"></i> 
+    </a>
+  </div>
+  
+  <style>
+  .social-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .social-buttons a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #15377f;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.3s ease; 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  
+  .social-buttons a:nth-child(1) { transition-delay: 0.2s; }
+  .social-buttons a:nth-child(2) { transition-delay: 0.4s; }
+  .social-buttons a:nth-child(3) { transition-delay: 0.6s; }
+  .social-buttons a:nth-child(4) { transition-delay: 0.8s; }
+  
+  .social-buttons a:hover {
+    background-color: #d13f6d;
+    transform: translateY(0); 
+  }
+  
+  .social-buttons.show a {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+  
+  .social-buttons i {
+    font-size: 20px;
+  }
+  </style>
+  
+  <script>
+    window.addEventListener('load', function() {
+      window.addEventListener('scroll', function() {
+        var socialButtons = document.querySelector('.social-buttons');
+        var slider = document.querySelector('.banner-area');
+        var footer = document.querySelector('footer');
+  
+        if (socialButtons && slider && footer) {
+          var sliderBottom = slider.getBoundingClientRect().bottom + window.pageYOffset;
+          var footerTop = footer.getBoundingClientRect().top + window.pageYOffset;
+          var socialButtonsHeight = socialButtons.offsetHeight;
+  
+          if (window.pageYOffset < sliderBottom) {
+            socialButtons.classList.remove('show');
+          } else if (window.pageYOffset + window.innerHeight > footerTop - socialButtonsHeight) {
+            socialButtons.classList.remove('show');
+          } else {
+            socialButtons.classList.add('show');
+          }
+        }
+      });
+    });
+  </script>
+  <!--YUSUF END - medyia-->
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Start Header Top 
+    ============================================= -->
+    <div class="top-bar-area one-line bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="info box">
+                        <ul>
+                            <li>
+                                <p>
+                                    <i class="fas fa-map-marker-alt"></i> <span>Türkiye - Istanbul</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fas fa-envelope-open"></i> <span>Info@senedder.org</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fas fa-mobile-alt"></i> <span>+90 552 152 58 88</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="topbar-button text-right col-md-3">
+                    <a href="#" class="btn btn-theme circle effect standard btn-sm">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Header 
+    ============================================= -->
+    <header>
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default navbar-sticky bootsnav">
+
+            <div class="container">
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo.png" class="logo logo-display" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Home Version One</a></li>
+                                <li><a href="index-2.html">Home Version Two</a></li>
+                                <li><a href="index-3.html">Home Version Three</a></li>
+                                <li><a href="index-4.html">Home Version Four</a></li>
+                                <li><a href="index-5.html">Home Version Five</a></li>
+                                <li><a href="index-6.html">Home Version Six</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Event</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="event-list.html">Event With Sidebar</a></li>
+                                <li><a href="event-list-2.html">Event List</a></li>
+                                <li><a href="event-carousel.html">Event Carousel</a></li>
+                                <li><a href="event-carousel-2.html">Event Carousel Two</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Projects</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="projects.html">Projects Three Colum</a></li>
+                                <li><a href="projects-2-colum.html">Projects Two Colum</a></li>
+                                <li><a href="projects-4-colum.html">Projects 4 Colum</a></li>
+                                <li><a href="projects-mixed-colum.html">Projects Mixed Colum</a></li>
+                                <li><a href="projects-grid-colum.html">Projects Grid Colum</a></li>
+                                <li><a href="projects-details.html">Projects Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Causes</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="causes.html">Causes Three Colum</a></li>
+                                <li><a href="causes-2-colum.html">Causes Two Colum</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                <li><a href="blog-2-colum.html">Blog Two Colum</a></li>
+                                <li><a href="blog-3-colum.html">Blog Three Colum</a></li>
+                                <li><a href="blog-single-left-sidebar.html">Single Left Sidebar</a></li>
+                                <li><a href="blog-single-right-sidebar.html">Single Right Sidebar</a></li>
+                                <li><a href="blog-single-no-sidebar.html">Single Without Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="404.html">Eror 404</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="volunteer.html">Volunteer</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="faq.html">Faq</a></li>
+                                <li><a href="partners.html">Partners</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Banner 
+    ============================================= -->
+    <div class="banner-area text-bg">
+        <div id="bootcarousel" class="carousel slide item-bg animate_text" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner text-light uppercase carousel-zoom">
+                <div class="item active">
+                    <div class="slider-thumb bg-fixed" style="background-image: url(assets/img/2440x1578.png);"></div>
+                    <div class="box-table">
+                        <div class="box-cell shadow dark">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="content">
+                                            <h4 data-animation="animated slideInRight">Warm hearts this winter</h4>
+                                            <h1 data-animation="animated slideInLeft">Help us bring warmth to those in need this winter</h1>
+                                            <a class="btn btn-light effect btn-sm" href="#" data-animation="animated slideInUp">Learn more</a>
+                                            <a class="btn btn-theme effect btn-sm" href="#" data-animation="animated slideInUp">Give Today</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-thumb bg-fixed" style="background-image: url(assets/img/2440x1578-2.png);"></div>
+                    <div class="box-table">
+                        <div class="box-cell shadow dark">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="content" data-animation="animated slideInRight">
+                                            <h4 data-animation="animated slideInRight">Give a little, warm a lot</h4>
+                                            <h1 data-animation="animated slideInLeft">Join us in spreading warmth and hope this winter season</h1>
+                                            <a class="btn btn-light effect btn-sm" href="#" data-animation="animated slideInUp">Learn more</a>
+                                            <a class="btn btn-theme effect btn-sm" href="#" data-animation="animated slideInUp">Support Our Cause</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-thumb bg-fixed" style="background-image: url(assets/img/2440x1578-3.png);"></div>
+                    <div class="box-table">
+                        <div class="box-cell shadow dark">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="content" data-animation="animated slideInRight">
+                                            <h4 data-animation="animated slideInRight">Share the warmth</h4>
+                                            <h1 data-animation="animated slideInLeft">This winter, give the gift of warmth to families in need</h1>
+                                            <a class="btn btn-light effect btn-sm" href="#" data-animation="animated slideInUp">Learn more</a>
+                                            <a class="btn btn-theme effect btn-sm" href="#" data-animation="animated slideInUp">Make a Difference</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Wrapper for slides -->
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#bootcarousel" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#bootcarousel" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start Services 
+    ============================================= -->
+    <section class="services-area bg-gray carousel-shadow">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="service-carousel text-center owl-carousel owl-theme">
+                        <div class="service-item">
+                            <div class="thumb">
+                                <img src="assets/img/800x600 4.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <h4>Education</h4>
+                                <p>
+                                    Targeting 50,000 students and their families: school bags, university scholarships, school supplies, and care for people with special needs.
+                                </p>
+                                <a href="#">Read More <i class="fas fa-angle-right"></i></a> 
+                            </div>  
+                        </div>
+                        <div class="service-item">
+                            <div class="thumb">
+                                <img src="assets/img/800x600.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <h4>Relief</h4>
+                                <p>
+                                    Targeting 50,000 students and their families: food security, clothing for orphans, care for orphans and their families, non-food aid.
+                                </p>
+                                <a href="#">Read More <i class="fas fa-angle-right"></i></a> 
+                            </div>  
+                        </div>
+                        <div class="service-item">
+                            <div class="thumb">
+                                <img src="assets/img/800x600 6.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <h4>Development & Community Building</h4>
+                                <p>
+                                    Targeting 200 entrepreneurs: food security, clothing for orphans, care for orphans and their families, non-food aid.
+                                </p>
+                                <a href="#">Read More <i class="fas fa-angle-right"></i></a> 
+                            </div>  
+                        </div>
+                        <div class="service-item">
+                            <div class="thumb">
+                                <img src="assets/img/800x600 7.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <h4>Sports and Youth</h4>
+                                <p>
+                                    Targeting 400 children: Supporting sports competitions, tournaments, and other similar activities.
+                                </p>
+                                <a href="#">Read More <i class="fas fa-angle-right"></i></a> 
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End services area -->
+
+    <!-- Start Help Step 
+    ============================================= -->
+    <div class="help-step-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 info">
+                    <h2>Why us?</h2>
+                    <h5>Your donation is more than just charity; it’s a lifeline for thousands of orphans, refugees, and vulnerable families.</h5>
+                    <p>
+                        By contributing, you’re helping us deliver food, education, and emergency aid to those in desperate need, while empowering Canadians to make a difference in their home countries. 
+                    </p>
+                    <p>
+                        Every dollar you give provides hope and changes lives. 
+                    </p>
+                    <a href="#" class="btn btn-theme effect btn-sm">Learn more</a>
+                </div>
+                <div class="col-md-7 items">
+                    <div class="row">
+                        <div class="item col-md-6 col-sm-6">
+                            <div class="content">
+                                <div class="thumb">
+                                    <img src="assets/img/800x600 2.png" alt="Thumb">
+                                </div>
+                                <div class="info">
+                                    <h4>Become a Volunteer:</h4>
+                                    <p>
+                                        Volunteer with us and help families in need. 
+                                    </p>
+                                    <a href="#">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-6 col-sm-6">
+                            <div class="content">
+                                <div class="thumb">
+                                    <img src="assets/img/800x600 3.png" alt="Thumb">
+                                </div>
+                                <div class="info">
+                                    <h4>Donate Us:</h4>
+                                    <p>
+                                        Donate today and help us make a difference. 
+                                    </p>
+                                    <a href="#">Donate Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Help Step -->
+
+    <!--YUSUF START - قسم التعريف-->
+    <section id="vision-mission-values" class="vision-mission-values default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="site-heading text-center">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h2>Our Vision, Mission, and Values</h2>
+                            <p>We believe that charitable work is a social responsibility, and we strive to achieve our goals through cooperation and solidarity with all segments of society.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="vision-mission-values-items">
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item vmv-item">
+                            <div class="icon-container"> 
+                                <i class="fas fa-eye"></i> 
+                            </div>
+                            <h4>Our Vision:</h4>
+                            <p>To be a leading platform in the field of charitable work, contributing to building a cohesive and supportive society.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item vmv-item">
+                            <div class="icon-container">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h4>Our Mission:</h4>
+                            <p>To provide support and assistance to those in need through sustainable projects and programs that contribute to improving their lives.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item vmv-item">
+                            <div class="icon-container">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Our Values:</h4>
+                            <p>Our values shape our actions and guide our decisions: Transparency - Credibility - Cooperation - Respect - Innovation.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+      .vmv-item {
+        border: 1px solid #ddd; 
+        padding: 30px; 
+        margin-bottom: 30px; 
+        border-radius: 5px; 
+        text-align: center; 
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+      }
+    
+      .vmv-item:hover {
+        transform: translateY(-10px); 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+      }
+    
+      .vmv-item .icon-container {
+        width: 80px; 
+        height: 80px; 
+        line-height: 80px; 
+        background-color: #CF3E6C; 
+        color: #fff; 
+        border-radius: 50%; 
+        margin: 0 auto 20px; 
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+    
+      .vmv-item:hover .icon-container {
+        transform: scale(1.1); 
+        background-color: #00BEFF; 
+      }
+    
+      .vmv-item i {
+        font-size: 30px; 
+      }
+    </style>
+    <!--YUSUF END - قسم التعريف-->
+
+
+    <!-- Start Recent Causes
+    ============================================= -->
+    <div class="recent-causes-area bg-gray default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="recent-causes-items causes-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="col-md-6 thumb bg-cover" style="background-image: url(assets/img/800x8003.png);"></div>
+                            <div class="col-md-6 info">
+                                <h4>RUpcoming projects</h4>
+                                <h2>Orphan Care Project</h2>
+                                <ul>
+                                    <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i> Syria - Aleppo</span></li>
+                                </ul>
+                                <p>
+                                    Orphan Sponsorship: The project depends on sponsoring 400 orphan children, and covers some of their needs: food, clothing, living expenses, education, providing stationery, books, transportation, and any other fees.
+                                </p>
+                                <div class="progress-box">
+                                    <h5>Raised $50,000<span class="pull-right">Goal $200,000</span></h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" data-width="22"></div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-theme effect btn-sm" href="#">Donate Now</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-6 thumb bg-cover" style="background-image: url(assets/img/800x8002.png);"></div>
+                            <div class="col-md-6 info">
+                                <h4>Latest campaigns</h4>
+                                <h2>Support the winter campaign</h2>
+                                <ul>
+                                    <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 25 day</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i> Palestine - Gaza</span></li>
+                                </ul>
+                                <p>
+                                    Providing essential materials to combat the winter cold, such as floor carpets, gas heaters, and winter blankets for 700 orphan families, in addition to clothing 500 orphans with winter clothes such as jackets, pants, and winter jackets.
+                                </p>
+                                <div class="progress-box">
+                                    <h5>Raised $20,000<span class="pull-right">Goal $100,000</span></h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" data-width="22"></div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-theme effect btn-sm" href="#">Donate Now</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-6 thumb bg-cover" style="background-image: url(assets/img/800x800.png);"></div>
+                            <div class="col-md-6 info">
+                                <h4>Recent Causes</h4>
+                                <h2>Flood Affected People</h2>
+                                <ul>
+                                    <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i> Mombasa, USA</span></li>
+                                </ul>
+                                <p>
+                                    Neither it cordial so painful picture studied if. Sex him position doubtful resolved boy expenses. Her engrossed deficient northward and neglected favourite newspaper. But use peculiar produced concerns ten.
+                                </p>
+                                <div class="progress-box">
+                                    <h5>Raised $57,089<span class="pull-right">Goal $50,000</span></h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" data-width="22"></div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-theme effect btn-sm" href="#">Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Recent Causes -->
+
+    <!-- Start Popular Causes
+    ============================================= -->
+    <div class="popular-causes-area default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="site-heading text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Popular Causes:</h2>
+                        <p>
+                            Discover the causes that matter most to our community and find ways to make a difference.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="popular-causes-items">
+                    <div class="col-md-6 col-sm-6 equal-height">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x800-2.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <h4>Support for Children:</h4>
+                                <ul>
+                                    <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i>Palestine - Gaza</span></li>
+                                </ul>
+                                <p>
+                                    Every child deserves a chance. Support children in need and help them reach their full potential.
+                                </p>
+                                <div class="progress-box">
+                                    <h5>Raised $57,089<span class="pull-right">Goal $50,000</span></h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" data-width="22"></div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-theme effect btn-sm" href="#">Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 equal-height">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x800-3.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <h4>Food for Syrian:</h4>
+                                <ul>
+                                    <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i>Syria - Bab</span></li>
+                                </ul>
+                                <p>
+                                    Nourishing Syrian Families: Providing essential food aid to those affected by conflict and displacement.
+                                </p>
+                                <div class="progress-box">
+                                    <h5>Raised $57,089<span class="pull-right">Goal $50,000</span></h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" data-width="22"></div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-theme effect btn-sm" href="#">Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 equal-height">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x800-4.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <h4>Education First:</h4>
+                                <ul>
+                                    <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i>Lebanon - Beirut</span></li>
+                                </ul>
+                                <p>
+                                    Education is the key to a brighter future.  Support our project in Lebanon and help us empower children through education.
+                                </p>
+                                <div class="progress-box">
+                                    <h5>Raised $57,089<span class="pull-right">Goal $50,000</span></h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" data-width="22"></div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-theme effect btn-sm" href="#">Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 equal-height">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x800-5.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <h4>Medical Supplies:</h4>
+                                <ul>
+                                    <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i>Sudan - Khartoum</span></li>
+                                </ul>
+                                <p>
+                                    Delivering essential medical supplies to those in need, providing access to critical healthcare and improving lives.
+                                </p>
+                                <div class="progress-box">
+                                    <h5>Raised $57,089<span class="pull-right">Goal $50,000</span></h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" data-width="22"></div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-theme effect btn-sm" href="#">Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Popular Causes -->
+
+    <!-- Start Event
+    ============================================= -->
+    <div class="event-area bg-gray default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="site-heading text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Our Event:</h2>
+                        <p>
+                            Connect with our community and explore our upcoming events to find ways to get involved and make a difference.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="event-items inner-cell event-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x600-6.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <div class="date">
+                                    29 Oct <span>2024</span>
+                                </div>
+                                <div class="content">
+                                    <h4>
+                                        <a href="#">Annual Conference:</a>
+                                    </h4>
+                                    <div class="meta">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-map-marker-alt"></i>Türkiye - Istanbul
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-clock"></i> 10:00 - 16:00
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        Celebrating a year of impact. Join us as we reflect on our achievements and look ahead to the future.  
+                                    </p>
+                                    <a class="btn btn-theme effect btn-sm" href="#">Learn more <i class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x600-10.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <div class="date">
+                                    23 Nov <span>2024</span>
+                                </div>
+                                <div class="content">
+                                    <h4>
+                                        <a href="#">Charity dinner:</a>
+                                    </h4>
+                                    <div class="meta">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-map-marker-alt"></i>Canada - Ottawa
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-clock"></i>15:00 - 17:00
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        Join us for an evening of giving and connect with our community at our Charity Dinner.
+                                    </p>
+                                    <a class="btn btn-theme effect btn-sm" href="#">Learn more <i class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x600-11.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <div class="date">
+                                    05 Jun <span>2025</span>
+                                </div>
+                                <div class="content">
+                                    <h4>
+                                        <a href="#">Charity Craft Fair:</a>
+                                    </h4>
+                                    <div class="meta">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-map-marker-alt"></i>Türkiye - Gaziantep
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-clock"></i>10:00 - 15:00
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        Discover one-of-a-kind treasures and support local artisans at our Charity Craft Fair. 
+                                    </p>
+                                    <a class="btn btn-theme effect btn-sm" href="#">Learn more <i class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x600-12.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <div class="date">
+                                    22 Dec <span>2025</span>
+                                </div>
+                                <div class="content">
+                                    <h4>
+                                        <a href="#">Cultural Seminar:</a>
+                                    </h4>
+                                    <div class="meta">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-map-marker-alt"></i>Türkiye - Istanbul
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-clock"></i> 12:00 - 17:00
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        Immerse yourself in the rich culture of Istanbul at our upcoming symposium.
+                                    </p>
+                                    <a class="btn btn-theme effect btn-sm" href="#">Learn more <i class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Event -->
+
+    <!-- Start Make Donation 
+    ============================================= -->
+    <div class="donation-form default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 form">
+                    <h2>Make a donation now:</h2>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Donation Details</h3>
+                        </div>
+                        <div class="row">
+                            <div class="panel-body">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="Amount">Amount</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="Amount" placeholder="$129.00" required>
+                                            <span class="input-group-addon"><i class="fas fa-dollar-sign"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="donateType">Frequency</label>
+                                    <select id="donateType" class="form-control">
+
+                                        <option value="once">Once</option>
+
+                                        <option value="weekly">Weekly</option>
+                                        <option value="Fortnightly">Fortnightly</option>
+                                        <option value="Monthly">Monthly</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Payment Details</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="cardNumber">Card Number</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number" required>
+                                                <span class="input-group-addon"><i class="fas fa-credit-card"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-7 col-xs-8">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="expMonth">Expiration Date</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <input type="text" class="form-control" id="expMonth" placeholder="MM" required data-stripe="exp_month" />
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <input type="text" class="form-control" name="expYear" placeholder="YY" required data-stripe="exp_year" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-5 col-xs-4 pull-right">
+                                        <div class="form-group">
+                                            <label for="cvCode">CV Code</label>
+                                            <input type="password" class="form-control" id="cvCode" placeholder="CV" required data-stripe="cvc" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="btn btn-theme effect btn-sm" type="submit">Donate Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 faq-items text-center">
+                    <h2>Frequently Asked Questions:</h2>
+                    <!-- Start Accordion -->
+                    <div class="acd-items acd-arrow">
+                        <div class="panel-group symb" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac1">
+                                            What kind of humanitarian aid does SENED provide?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>
+                                            SENED provides a variety of humanitarian aid to those in need, including:
+                                        </p>
+                                        <p>
+                                            1-Emergency Relief: Providing essential items like food, water, shelter, and medical supplies during crises. 2-Winter Aid: Distributing warm clothing, blankets, and heating supplies to help families stay warm during the winter months. 3-Support for Orphans and Refugees: Offering educational resources, healthcare, and psychosocial support to vulnerable children and families. 4-Development Projects: Implementing sustainable initiatives to improve living conditions and promote self-sufficiency in disadvantaged communities. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac2">
+                                            How can I donate to SENED? 
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            You can donate to SENED through various channels:
+                                        </p>
+                                        <p>
+                                            1-Online: Visit our website and click the "Donate Now" button to make a secure online donation. 2-Bank Transfer: Transfer funds directly to our bank account using the details provided on our website. 3-In-Person: Visit our office during working hours to make a cash or check donation. 4-Other Methods: Explore other donation options like donating via phone or mail by contacting us through the information provided on our website. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac3">
+                                            Where does SENED operate?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            SENED primarily operates in the Middle East, with a focus on providing aid to families in need in Tripoli, Palestine, Syria, and Yemen.
+                                        </p>
+                                        <p>
+                                            We also have a strong presence in Canada, where we connect Canadians with opportunities to support our mission.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#ac4">
+                                            Can I volunteer with SENED? 
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="ac4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Absolutely! We welcome volunteers who are passionate about making a difference.
+                                        </p>
+                                        <p>
+                                            You can find information about volunteering opportunities and how to apply on our website's "Get Involved" or "Volunteer" page.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Accordion -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Make Donation -->
+
+    <!-- Start Team Members
+    ============================================= -->
+    <div class="team-members-area item-white bg-gray default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="site-heading text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Meet Our Team:</h2>
+                        <p>
+                            Get to know the individuals driving our work. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 team-member-info">
+                    <div class="team-carousel-items owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="col-md-6 thumb">
+                                <img src="assets/img/800x600-3.png" alt="Team">
+                            </div>
+                            <div class="col-md-6 info title">
+                                <h3>Mohammad Karhani</h3>
+                                <h5>international operations manager</h5>
+                                <ul>
+                                    <li>Date of joining:<span>2020</span></li>
+                                    <li>Location: <span>Türkiye - Istanbul</span></li>
+                                </ul>
+                                <p>
+                                    With over 15 years of experience in business consulting and relief work, our Director of International Operations leads the expansion of our relief efforts in the Middle East. He brings extensive expertise in management, marketing, and disaster response to ensure our mission's success.
+                                </p>
+                                <div class="social">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-6 thumb">
+                                <img src="assets/img/800x600-4.png" alt="Team">
+                            </div>
+                            <div class="col-md-6 info title">
+                                <h3>Ahmed Kabarra</h3>
+                                <h5>chairman</h5>
+                                <ul>
+                                    <li>Date of joining:<span>2020</span></li>
+                                    <li>Location:<span>Canada - Ottawa</span></li>
+                                </ul>
+                                <p>
+                                    Ahmad is a dedicated humanitarian who has worked with organizations in over 15 countries to improve the lives of the less fortunate. After settling in Canada in 2014, he founded Mission Relief to provide aid to families in his hometown and neighboring countries.
+                                </p>
+                                <div class="social">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-6 thumb">
+                                <img src="assets/img/800x600-5.png" alt="Team">
+                            </div>
+                            <div class="col-md-6 info title">
+                                <h3>Zubaida Ghamravi Kabara</h3>
+                                <h5>Lebanon Coordinator</h5>
+                                <ul>
+                                    <li>Date of birth: <span>2020</span></li>
+                                    <li>Location: <span>Lebanon - Beirut</span></li>
+                                </ul>
+                                <p>
+                                    Mother of 3 and grandmother of 8 beautiful children. A social activist who is always happy to give, so she became addicted to helping families in need and about 15 years ago we started an orphan sponsorship project. Zubaida never hesitated to help those who asked for her help in any way she could.
+                                </p>
+                                <div class="social">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Team Members -->
+
+    <!-- Start Blog
+    ============================================= -->
+    <div class="blog-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="site-heading text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Recent Blog:</h2>
+                        <p>
+                            Read inspiring stories from the field and learn how your support is making a difference.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="blog-items">
+                    <div class="col-md-4 item-box">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="blog-single-left-sidebar.html">
+                                    <img src="assets/img/800x600-9.png" alt="Thumbnail">
+                                    <div class="overlay-icon">
+                                        <i class="fa fa-images"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="title-meta">
+                                    <div class="date">
+                                        15 <span>Nov</span>
+                                    </div>
+                                    <div class="title">
+                                        <h4>
+                                            <a href="blog-single-left-sidebar.html">The Power of Human Connection:</a>
+                                        </h4>
+                                        <div class="meta">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-user"></i>Ahmad</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-calendar-alt"></i>2024
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    In this blog post, we share inspiring stories from our volunteers about their experiences working with our organization and the impact they have made in the lives of others.
+                                </p>
+                                <a href="blog-single-left-sidebar.html">read more <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 item-box">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="blog-single-left-sidebar.html">
+                                    <img src="assets/img/800x600-8.png" alt="Thumbnail">
+                                    <div class="overlay-icon">
+                                        <i class="fa fa-video"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="title-meta">
+                                    <div class="date">
+                                        28 <span>Nov</span>
+                                    </div>
+                                    <div class="title">
+                                        <h4>
+                                            <a href="blog-single-left-sidebar.html">SENED, Committed to Sustainable Development:</a>
+                                        </h4>
+                                        <div class="meta">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-user"></i>Mohamad</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-calendar-alt"></i>2024
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    Winter aid is vital, but SENED is also dedicated to long-term solutions to poverty.  This article explores our sustainable development projects that empower communities.
+                                </p>
+                                <a href="blog-single-left-sidebar.html">read more <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 item-box">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="blog-single-left-sidebar.html">
+                                    <img src="assets/img/800x600-7.png" alt="Thumbnail">
+                                    <div class="overlay-icon">
+                                        <i class="fa fa-images"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="title-meta">
+                                    <div class="date">
+                                        20 <span>Nov</span>
+                                    </div>
+                                    <div class="title">
+                                        <h4>
+                                            <a href="blog-single-left-sidebar.html">How Canadians are Making a Difference in the Middle East:</a>
+                                        </h4>
+                                        <div class="meta">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-user"></i>Hayat</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-calendar-alt"></i>2024
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    SENED is committed to bridging the gap between Canadians and their home countries by providing opportunities for meaningful engagement and impactful change.
+                                </p>
+                                <a href="blog-single-left-sidebar.html">read more <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Blog -->
+
+    <!-- Clients
+    ============================================= -->
+    <div class="clients-area bg-gray default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="clients-items owl-carousel owl-theme text-center">
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Clients -->
+
+    <!-- Start Footer 
+    ============================================= -->
+    <footer class="default-padding-top text-light">
+        <div class="container">
+            <div class="row">
+                <div class="f-items fv1">
+                    <div class="col-md-5 item">
+                        <div class="f-item">
+                            <h4>About Us:</h4>
+                            <p>
+                                We provide critical humanitarian aid to vulnerable populations worldwide, from supporting orphans and refugees to delivering emergency relief. We strive to connect Canadians with opportunities to make a meaningful impact and create lasting change in their home countries.
+                            </p>
+                            <p>
+                                <span>Please write your email and get our updates:</span>
+                            </p>
+                            <div class="subscribe">
+                                <form action="#">
+                                    <div class="input-group stylish-input-group">
+                                        <input type="email" name="email" class="form-control" placeholder="Enter your e-mail here">
+                                        <span class="input-group-addon">
+                                            <button type="submit">
+                                                <i class="fa fa-paper-plane"></i>
+                                            </button>  
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 item">
+                        <div class="f-item link full">
+                            <h4>Quick Links:</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Saving & Investments</a></li>
+                                <li><a href="#">Retirements</a></li>
+                                <li><a href="#">Business Services</a></li>
+                                <li><a href="#">Markets Research</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 item">
+                        <div class="f-item">
+                            <h4>twitter widget:</h4>
+                            <div class="twitter-item">
+                                <div class="twitter-content">
+                                    <p>
+                                        Looking for an awesome CREATIVE WordPress Theme? Esquise was updated and optimized to run even better. Find it here: <a target="_blank" href="http://t.co/0WWEMQEQ48">http://t.co/0WWEMQEQ48</a>
+                                    </p>
+                                </div>
+                                <div class="twitter-context">
+                                    <i class="fab fa-twitter"></i><span class="twitter-date"> 01 day ago</span>
+                                </div>
+                            </div>
+                            <div class="twitter-item">
+                                <div class="twitter-content">
+                                    <p>
+                                        It is a long established fact that a reader will be distracted by the readable . Find it here: <a target="_blank" href="http://t.co/0WWEMQEQ48">http://t.co/0WWEMQEQ48</a>
+                                    </p>
+                                </div>
+                                <div class="twitter-context">
+                                    <i class="fab fa-twitter"></i><span class="twitter-date"> 02 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-6 logo">
+                            <img src="assets/img/logo-light.png" alt="Logo">
+                        </div>
+                        <div class="col-md-6 footer-bottom-menu text-right">
+                            <ul>
+                                <li><a href="terms-conditions.html">Terms of Use</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="contact-1.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/equal-height.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/progress-bar.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/YTPlayer.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
