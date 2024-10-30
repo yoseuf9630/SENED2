@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 
 <head>
     <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="SENED - Humanitarian Relief Association">
+    <meta name="infoription" content="Charities - Charity & Nonprofit Template">
 
     <!-- ========== Page Title ========== -->
-    <title>SENED - Humanitarian Relief Association</title>
+    <title>Charities - Charity & Nonprofit Template</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -35,95 +35,10 @@
     <![endif]-->
 
     <!-- ========== Google Fonts ========== -->
-    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900" rel="stylesheet">
 
 </head>
-
-<!--YUSUF START - media-->
-<div class="social-buttons">
-    <a href="https://www.facebook.com/seneddernegi" target="_blank">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="https://www.instagram.com/dernegisened" target="_blank">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://wa.me/+905528008880" target="_blank">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-    <a href="https://twitter.com/dernegisened" target="_blank">
-      <i class="fab fa-twitter"></i> 
-    </a>
-  </div>
-  
-  <style>
-  .social-buttons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-  }
-  
-  .social-buttons a {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #15377f;
-    color: #fff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    vertical-align: middle;
-    transition: all 0.3s ease; 
-    opacity: 0; 
-    transform: translateY(20px); 
-  }
-  
-  .social-buttons a:nth-child(1) { transition-delay: 0.2s; }
-  .social-buttons a:nth-child(2) { transition-delay: 0.4s; }
-  .social-buttons a:nth-child(3) { transition-delay: 0.6s; }
-  .social-buttons a:nth-child(4) { transition-delay: 0.8s; }
-  
-  .social-buttons a:hover {
-    background-color: #d13f6d;
-    transform: translateY(0); 
-  }
-  
-  .social-buttons.show a {
-    opacity: 1; 
-    transform: translateY(0); 
-  }
-  
-  .social-buttons i {
-    font-size: 20px;
-  }
-  </style>
-  
-  <script>
-    window.addEventListener('load', function() {
-      window.addEventListener('scroll', function() {
-        var socialButtons = document.querySelector('.social-buttons');
-        var slider = document.querySelector('.banner-area');
-        var footer = document.querySelector('footer');
-  
-        if (socialButtons && slider && footer) {
-          var sliderBottom = slider.getBoundingClientRect().bottom + window.pageYOffset;
-          var footerTop = footer.getBoundingClientRect().top + window.pageYOffset;
-          var socialButtonsHeight = socialButtons.offsetHeight;
-  
-          if (window.pageYOffset < sliderBottom) {
-            socialButtons.classList.remove('show');
-          } else if (window.pageYOffset + window.innerHeight > footerTop - socialButtonsHeight) {
-            socialButtons.classList.remove('show');
-          } else {
-            socialButtons.classList.add('show');
-          }
-        }
-      });
-    });
-  </script>
-  <!--YUSUF END - medyia-->
 
 <body>
 
@@ -133,7 +48,7 @@
 
     <!-- Start Header Top 
     ============================================= -->
-    <div class="top-bar-area one-line bg-dark text-light">
+    <div class="top-bar-area one-line bg-theme text-light">
         <div class="container">
             <div class="row">
                 <div class="col-md-9">
@@ -141,24 +56,29 @@
                         <ul>
                             <li>
                                 <p>
-                                    <i class="fas fa-map-marker-alt"></i> <span>Türkiye - Istanbul</span>
+                                    <i class="fas fa-map-marker-alt"></i> <span>California, TX 70240</span>
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <i class="fas fa-envelope-open"></i> <span>Info@senedder.org</span>
+                                    <i class="fas fa-envelope-open"></i> <span>Info@gmail.com</span>
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <i class="fas fa-mobile-alt"></i> <span>+90 552 152 58 88</span>
+                                    <i class="fas fa-mobile-alt"></i> <span>+123 456 7890</span>
                                 </p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="topbar-button text-right col-md-3">
-                    <a href="#" class="btn btn-theme circle effect standard btn-sm">Donate Now</a>
+                <div class="topbar-social text-right col-md-3">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -268,8 +188,8 @@
 
     <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area text-bg">
-        <div id="bootcarousel" class="carousel slide item-bg animate_text" data-ride="carousel">
+    <div class="banner-area">
+        <div id="bootcarousel" class="carousel slide item-bg animate_text carousel-fade" data-ride="carousel">
             <!-- Wrapper for slides -->
             <div class="carousel-inner text-light uppercase carousel-zoom">
                 <div class="item active">
@@ -280,10 +200,12 @@
                                 <div class="row">
                                     <div class="col-md-8">
                                         <div class="content">
-                                            <h4 data-animation="animated slideInRight">Warm hearts this winter</h4>
-                                            <h1 data-animation="animated slideInLeft">Help us bring warmth to those in need this winter</h1>
+                                            <h1 data-animation="animated slideInRight">Join with us and save the world</h1>
+                                            <p data-animation="animated slideInLeft">
+                                                Shall there whose those stand she end. So unaffected partiality indulgence dispatched to of celebrated remarkably. Unfeeling are had allowance own perceived abilities.
+                                            </p>
                                             <a class="btn btn-light effect btn-sm" href="#" data-animation="animated slideInUp">Learn more</a>
-                                            <a class="btn btn-theme effect btn-sm" href="#" data-animation="animated slideInUp">Give Today</a>
+                                            <a class="btn btn-theme effect btn-sm" href="#" data-animation="animated slideInUp">Join Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -292,17 +214,19 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="slider-thumb bg-fixed" style="background-image: url(assets/img/2440x1578-2.png);"></div>
+                    <div class="slider-thumb bg-fixed" style="background-image: url(assets/img/2440x1578.png);"></div>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-8">
                                         <div class="content" data-animation="animated slideInRight">
-                                            <h4 data-animation="animated slideInRight">Give a little, warm a lot</h4>
-                                            <h1 data-animation="animated slideInLeft">Join us in spreading warmth and hope this winter season</h1>
+                                            <h1 data-animation="animated slideInRight">Help us to save the Homeless People</h1>
+                                            <p data-animation="animated slideInLeft">
+                                                Shall there whose those stand she end. So unaffected partiality indulgence dispatched to of celebrated remarkably. Unfeeling are had allowance own perceived abilities.
+                                            </p>
                                             <a class="btn btn-light effect btn-sm" href="#" data-animation="animated slideInUp">Learn more</a>
-                                            <a class="btn btn-theme effect btn-sm" href="#" data-animation="animated slideInUp">Support Our Cause</a>
+                                            <a class="btn btn-theme effect btn-sm" href="#" data-animation="animated slideInUp">Join Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -311,17 +235,19 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="slider-thumb bg-fixed" style="background-image: url(assets/img/2440x1578-3.png);"></div>
+                    <div class="slider-thumb bg-fixed" style="background-image: url(assets/img/2440x1578.png);"></div>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-8">
                                         <div class="content" data-animation="animated slideInRight">
-                                            <h4 data-animation="animated slideInRight">Share the warmth</h4>
-                                            <h1 data-animation="animated slideInLeft">This winter, give the gift of warmth to families in need</h1>
+                                            <h1 data-animation="animated slideInRight">Give a helping hand and Help unfortunates</h1>
+                                            <p data-animation="animated slideInLeft">
+                                                Shall there whose those stand she end. So unaffected partiality indulgence dispatched to of celebrated remarkably. Unfeeling are had allowance own perceived abilities.
+                                            </p>
                                             <a class="btn btn-light effect btn-sm" href="#" data-animation="animated slideInUp">Learn more</a>
-                                            <a class="btn btn-theme effect btn-sm" href="#" data-animation="animated slideInUp">Make a Difference</a>
+                                            <a class="btn btn-theme effect btn-sm" href="#" data-animation="animated slideInUp">Join Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -345,113 +271,46 @@
     </div>
     <!-- End Banner -->
 
-    <!-- Start Services 
+    <!-- Start What We Do
     ============================================= -->
-    <section class="services-area bg-gray carousel-shadow">
+    <div class="we-do-area default-padding cell-items">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="service-carousel text-center owl-carousel owl-theme">
-                        <div class="service-item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600 4.png" alt="Thumb">
-                            </div>
-                            <div class="info">
+                <div class="col-md-6 thumb bg-cover" style="background-image: url(assets/img/800x800.png);"></div>
+                <div class="col-md-6 info">
+                    <h2>What We Are Doing</h2>
+                    <p>
+                        Continual say suspicion provision you neglected sir curiosity unwilling. Simplicity end themselves increasing led day sympathize yet. General windows effects not are drawing man garrets. Common indeed garden you his ladies out yet. Preference imprudence contrasted to remarkably in on. Taken now you him trees tears any. Her object giving end sister except oppose. 
+                    </p>
+                    <div class="list-items">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 item">
+                                <i class="flaticon-open-book"></i>
                                 <h4>Education</h4>
                                 <p>
-                                    Targeting 50,000 students and their families: school bags, university scholarships, school supplies, and care for people with special needs.
+                                    Preference imprudence contrasted to remarkably in on. Taken now you him trees tears any 
                                 </p>
-                                <a href="#">Read More <i class="fas fa-angle-right"></i></a> 
-                            </div>  
-                        </div>
-                        <div class="service-item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
                             </div>
-                            <div class="info">
-                                <h4>Relief</h4>
+                            <div class="col-md-6 col-sm-6 item">
+                                <i class="flaticon-rice-2"></i>
+                                <h4>Rice for life</h4>
                                 <p>
-                                    Targeting 50,000 students and their families: food security, clothing for orphans, care for orphans and their families, non-food aid.
+                                    Continual say suspicion provision you neglected sir curiosity unwilling. Simplicity
                                 </p>
-                                <a href="#">Read More <i class="fas fa-angle-right"></i></a> 
-                            </div>  
-                        </div>
-                        <div class="service-item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600 6.png" alt="Thumb">
                             </div>
-                            <div class="info">
-                                <h4>Development & Community Building</h4>
+                            <div class="col-md-6 col-sm-6 item">
+                                <i class="flaticon-doctor"></i>
+                                <h4>Health</h4>
                                 <p>
-                                    Targeting 200 entrepreneurs: food security, clothing for orphans, care for orphans and their families, non-food aid.
+                                    Common indeed garden you his ladies out yet. Preference imprudence contrasted remarkably
                                 </p>
-                                <a href="#">Read More <i class="fas fa-angle-right"></i></a> 
-                            </div>  
-                        </div>
-                        <div class="service-item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600 7.png" alt="Thumb">
                             </div>
-                            <div class="info">
-                                <h4>Sports and Youth</h4>
+                            <div class="col-md-6 col-sm-6 item">
+                                <i class="flaticon-water-bottle"></i>
+                                <h4>Water</h4>
                                 <p>
-                                    Targeting 400 children: Supporting sports competitions, tournaments, and other similar activities.
+                                    Pontrasted to remarkably in on. Taken now you him trees tears any. Her object giving
                                 </p>
-                                <a href="#">Read More <i class="fas fa-angle-right"></i></a> 
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End services area -->
-
-    <!-- Start Help Step 
-    ============================================= -->
-    <div class="help-step-area default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 info">
-                    <h2>Why us?</h2>
-                    <h5>Your donation to SENED is more than just charity; it’s a lifeline for thousands of orphans, refugees, and vulnerable families.
-                    </h5>
-                    <p>
-                        By contributing, you’re helping us deliver food, education, and emergency aid to those in desperate need, while empowering Canadians to make a difference in their home countries.
-                    </p>
-                    <p>
-                        Every dollar you give provides hope and changes lives. 
-                    </p>
-                    <a href="#" class="btn btn-theme effect btn-sm">Learn more</a>
-                </div>
-                <div class="col-md-7 items">
-                    <div class="row">
-                        <div class="item col-md-6 col-sm-6">
-                            <div class="content">
-                                <div class="thumb">
-                                    <img src="assets/img/800x600 2.png" alt="Thumb">
-                                </div>
-                                <div class="info">
-                                    <h4>Become a Volunteer:</h4>
-                                    <p>
-                                        Volunteer with us and help families in need. 
-                                    </p>
-                                    <a href="#">Join Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-md-6 col-sm-6">
-                            <div class="content">
-                                <div class="thumb">
-                                    <img src="assets/img/800x600 3.png" alt="Thumb">
-                                </div>
-                                <div class="info">
-                                    <h4>Donate Us:</h4>
-                                    <p>
-                                        Donate today and help us make a difference. 
-                                    </p>
-                                    <a href="#">Donate Now</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -459,271 +318,62 @@
             </div>
         </div>
     </div>
-    <!-- End Help Step -->
+    <!-- End What We Do -->
 
-    <div class="parallax-section">
-        <div class="parallax-image" style="background-image: url('assets/img/800x800-4.png');"></div>
-      </div>
-      
-      <style>
-        .parallax-section {
-          position: relative;
-          height: 400px; /* اضبط الارتفاع حسب رغبتك */
-          overflow: hidden; 
-        }
-      
-        .parallax-image {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          background-attachment: fixed; /* لتثبيت الصورة */
-          background-position: center;
-          z-index: -1; /* لجعل الصورة في الخلفية */
-        }
-      </style>
-
-    <!--YUSUF START - قسم التعريف-->
-    <section id="vision-mission-values" class="vision-mission-values default-padding">
-        <div class="container">
+    <!-- Start About
+    ============================================= -->
+    <section class="about-area cell-items bg-gray">
+        <div class="container-full">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="site-heading text-center">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2>Our Vision, Mission, and Values</h2>
-                            <p>We believe that charitable work is a social responsibility, and we strive to achieve our goals through cooperation and solidarity with all segments of society.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="vision-mission-values-items">
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item vmv-item">
-                            <div class="icon-container"> 
-                                <i class="fas fa-eye"></i> 
+                <div class="col-md-6 thumb bg-cover" style="background-image: url(assets/img/2440x1578.png);"></div>
+                <div class="col-md-6 info">
+                    <h2>We’ve funded 120,00 charity projects for 20M people around the world.</h2>
+                    <p>
+                        Contented attending smallness it oh ye unwilling. Turned favour man two but lovers. Suffer should if waited common person little oh. Improved civility graceful sex few smallest screened settling. Likely active her warmly has 
+                    </p>
+                    <div class="joining-way">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="flaticon-donation"></i>
                             </div>
-                            <h4>Our Vision:</h4>
-                            <p>To be a leading platform in the field of charitable work, contributing to building a cohesive and supportive society.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item vmv-item">
-                            <div class="icon-container">
-                                <i class="fas fa-bullhorn"></i>
+                            <div class="content">
+                                <h4>Make Donation</h4>
+                                <p>
+                                    Shall there whose those stand she end. So unaffected partiality indulgence dispatched to of celebrated remarkably. Unfeeling are had allowance own perceived abilities. 
+                                </p>
+                                <a href="#">Read More</a>
                             </div>
-                            <h4>Our Mission:</h4>
-                            <p>To provide support and assistance to those in need through sustainable projects and programs that contribute to improving their lives.</p>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item vmv-item">
-                            <div class="icon-container">
-                                <i class="fas fa-handshake"></i>
+                        <div class="item">
+                            <div class="icon">
+                                <i class="flaticon-solidarity"></i>
                             </div>
-                            <h4>Our Values:</h4>
-                            <p>Our values shape our actions and guide our decisions: Transparency - Credibility - Cooperation - Respect - Innovation.</p> 
+                            <div class="content">
+                                <h4>Become a Volunteer</h4>
+                                <p>
+                                    Shall there whose those stand she end. So unaffected partiality indulgence dispatched to of celebrated remarkably. Unfeeling are had allowance own perceived abilities. 
+                                </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <i class="flaticon-open-book"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Give Scholarship</h4>
+                                <p>
+                                    Shall there whose those stand she end. So unaffected partiality indulgence dispatched to of celebrated remarkably. Unfeeling are had allowance own perceived abilities. 
+                                </p>
+                                <a href="#">Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <style>
-      .vmv-item {
-        border: 1px solid #ddd; 
-        padding: 30px; 
-        margin-bottom: 30px; 
-        border-radius: 5px; 
-        text-align: center; 
-        transition: transform 0.3s ease, box-shadow 0.3s ease; 
-      }
-    
-      .vmv-item:hover {
-        transform: translateY(-10px); 
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
-      }
-    
-      .vmv-item .icon-container {
-        width: 80px; 
-        height: 80px; 
-        line-height: 80px; 
-        background-color: #CF3E6C; 
-        color: #fff; 
-        border-radius: 50%; 
-        margin: 0 auto 20px; 
-        transition: transform 0.3s ease, background-color 0.3s ease;
-      }
-    
-      .vmv-item:hover .icon-container {
-        transform: scale(1.1); 
-        background-color: #00BEFF; 
-      }
-    
-      .vmv-item i {
-        font-size: 30px; 
-      }
-    </style>
-    <!--YUSUF END - قسم التعريف-->
-
-
-    <!-- Start Recent Causes
-    ============================================= -->
-    <div class="recent-causes-area bg-gray default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="recent-causes-items causes-carousel owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="col-md-6 thumb bg-cover" style="background-image: url(assets/img/800x8003.png);"></div>
-                            <div class="col-md-6 info">
-                                <h4>RUpcoming projects</h4>
-                                <h2>Orphan Care Project:</h2>
-                                <ul>
-                                    <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
-                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i> Syria - Aleppo</span></li>
-                                </ul>
-                                <p>
-                                    Orphan Sponsorship: The project depends on sponsoring 400 orphan children, and covers some of their needs: food, clothing, living expenses, education, providing stationery, books, transportation, and any other fees.
-                                </p>
-                                <div class="progress-box">
-                                    <h5>Raised $50,000<span class="pull-right">Goal $200,000</span></h5>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" data-width="22"></div>
-                                    </div>
-                                </div>
-                                <a class="btn btn-theme effect btn-sm" href="#">Donate Now</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-6 thumb bg-cover" style="background-image: url(assets/img/800x8002.png);"></div>
-                            <div class="col-md-6 info">
-                                <h4>Latest campaigns</h4>
-                                <h2>Support the winter campaign</h2>
-                                <ul>
-                                    <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 25 day</span></li>
-                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i> Palestine - Gaza</span></li>
-                                </ul>
-                                <p>
-                                    Providing essential materials to combat the winter cold, such as floor carpets, gas heaters, and winter blankets for 700 orphan families, in addition to clothing 500 orphans with winter clothes such as jackets, pants, and winter jackets.
-                                </p>
-                                <div class="progress-box">
-                                    <h5>Raised $20,000<span class="pull-right">Goal $100,000</span></h5>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" data-width="22"></div>
-                                    </div>
-                                </div>
-                                <a class="btn btn-theme effect btn-sm" href="#">Donate Now</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-6 thumb bg-cover" style="background-image: url(assets/img/800x800.png);"></div>
-                            <div class="col-md-6 info">
-                                <h4>Recent Causes</h4>
-                                <h2>Flood Affected People</h2>
-                                <ul>
-                                    <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
-                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i> Mombasa, USA</span></li>
-                                </ul>
-                                <p>
-                                    Neither it cordial so painful picture studied if. Sex him position doubtful resolved boy expenses. Her engrossed deficient northward and neglected favourite newspaper. But use peculiar produced concerns ten.
-                                </p>
-                                <div class="progress-box">
-                                    <h5>Raised $57,089<span class="pull-right">Goal $50,000</span></h5>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" data-width="22"></div>
-                                    </div>
-                                </div>
-                                <a class="btn btn-theme effect btn-sm" href="#">Donate Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Recent Causes -->
-
-
-    <section id="about-sened" class="about-sened default-padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="about-sened-image">
-                <img src="assets/img/about-sened.jpg" alt="We at SENED"> 
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="about-sened-content">
-                <h2>We at SENED:</h2>
-                <p>We at SENED are dedicated to providing critical humanitarian aid to vulnerable populations across the globe. From supporting orphans and refugees to delivering emergency relief in crisis situations, we work tirelessly to uplift communities in need. Our mission is to bridge the gap between Canadians and their home countries by creating opportunities for meaningful involvement and impactful change. Through partnerships and local initiatives, we strive to ensure that those most in need receive the support and resources to rebuild their lives.</p>
-                <div class="sened-stats">
-                  <div class="stat">
-                    <i class="fas fa-users"></i>
-                    <span class="counter" data-to="1250">0</span>
-                    <span>Volunteers</span>
-                  </div>
-                  <div class="stat">
-                    <i class="fas fa-hands-helping"></i>
-                    <span class="counter" data-to="57">0</span>
-                    <span>Projects</span>
-                  </div>
-                  <div class="stat">
-                    <i class="fas fa-globe"></i>
-                    <span class="counter" data-to="25">0</span>
-                    <span>Countries</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <style>
-        /* ... (previous CSS styles remain unchanged) ... */
-      
-        .sened-stats .stat {
-          text-align: center;
-          margin-bottom: 20px; 
-          padding: 20px; 
-          border: 1px solid #ddd; 
-          border-radius: 5px; 
-          transition: transform 0.3s ease, box-shadow 0.3s ease; 
-          cursor: pointer; 
-        }
-      
-        .sened-stats .stat:hover {
-          transform: translateY(-5px); 
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
-        }
-      
-        .sened-stats i {
-          font-size: 40px; 
-          color: #CF3E6C;
-          margin-bottom: 15px; 
-          display: block; 
-        }
-      
-        .sened-stats span {
-          display: block; 
-          font-size: 18px; 
-        }
-      
-        .sened-stats .counter {
-          font-size: 24px; 
-          font-weight: bold; 
-          margin-bottom: 5px; 
-        }
-      </style>
-      
-      <script>
-        // ... (JavaScript code remains unchanged) ...
-      </script>
-
+    <!--End  About -->
 
     <!-- Start Popular Causes
     ============================================= -->
@@ -732,28 +382,28 @@
             <div class="row">
                 <div class="site-heading text-center">
                     <div class="col-md-8 col-md-offset-2">
-                        <h2>Popular Causes:</h2>
+                        <h2>Popular Causes</h2>
                         <p>
-                            Discover the causes that matter most to our community and find ways to make a difference.
+                            Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. 
                         </p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="popular-causes-items">
-                    <div class="col-md-6 col-sm-6 equal-height">
+                    <div class="col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x800-2.png" alt="Thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
                             </div>
                             <div class="info">
-                                <h4>Support for Children:</h4>
+                                <h4>Support for Children</h4>
                                 <ul>
                                     <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
-                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i>Palestine - Gaza</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i> Mombasa, USA</span></li>
                                 </ul>
                                 <p>
-                                    Every child deserves a chance. Support children in need and help them reach their full potential.
+                                    Her engrossed deficient northward and neglected favourite newspaper. But use peculiar produced concerns ten.
                                 </p>
                                 <div class="progress-box">
                                     <h5>Raised $57,089<span class="pull-right">Goal $50,000</span></h5>
@@ -765,19 +415,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 equal-height">
+                    <div class="col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x800-3.png" alt="Thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
                             </div>
                             <div class="info">
-                                <h4>Food for Syrian:</h4>
+                                <h4>Food for syrian</h4>
                                 <ul>
                                     <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
-                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i>Syria - Bab</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i> Mombasa, USA</span></li>
                                 </ul>
                                 <p>
-                                    Nourishing Syrian Families: Providing essential food aid to those affected by conflict and displacement.
+                                    Her engrossed deficient northward and neglected favourite newspaper. But use peculiar produced concerns ten.
                                 </p>
                                 <div class="progress-box">
                                     <h5>Raised $57,089<span class="pull-right">Goal $50,000</span></h5>
@@ -789,19 +439,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 equal-height">
+                    <div class="col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x800-4.png" alt="Thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
                             </div>
                             <div class="info">
-                                <h4>Education First:</h4>
+                                <h4>Uganda education</h4>
                                 <ul>
                                     <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
-                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i>Lebanon - Beirut</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i> Mombasa, USA</span></li>
                                 </ul>
                                 <p>
-                                    Education is the key to a brighter future.  Support our project in Lebanon and help us empower children through education.
+                                    Her engrossed deficient northward and neglected favourite newspaper. But use peculiar produced concerns ten.
                                 </p>
                                 <div class="progress-box">
                                     <h5>Raised $57,089<span class="pull-right">Goal $50,000</span></h5>
@@ -813,19 +463,67 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 equal-height">
+                    <div class="col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x800-5.png" alt="Thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
                             </div>
                             <div class="info">
-                                <h4>Medical Supplies:</h4>
+                                <h4>Capetown orphanage</h4>
                                 <ul>
                                     <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
-                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i>Sudan - Khartoum</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i> Mombasa, USA</span></li>
                                 </ul>
                                 <p>
-                                    Delivering essential medical supplies to those in need, providing access to critical healthcare and improving lives.
+                                    Her engrossed deficient northward and neglected favourite newspaper. But use peculiar produced concerns ten.
+                                </p>
+                                <div class="progress-box">
+                                    <h5>Raised $57,089<span class="pull-right">Goal $50,000</span></h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" data-width="22"></div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-theme effect btn-sm" href="#">Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <h4>Kids playground</h4>
+                                <ul>
+                                    <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i> Mombasa, USA</span></li>
+                                </ul>
+                                <p>
+                                    Her engrossed deficient northward and neglected favourite newspaper. But use peculiar produced concerns ten.
+                                </p>
+                                <div class="progress-box">
+                                    <h5>Raised $57,089<span class="pull-right">Goal $50,000</span></h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" data-width="22"></div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-theme effect btn-sm" href="#">Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <h4>Home For Homeless</h4>
+                                <ul>
+                                    <li>Time Left <span> <i class="fas fa-calendar-alt"></i> 15 day</span></li>
+                                    <li>Target Location <span> <i class="fas fa-map-marker-alt"></i> Mombasa, USA</span></li>
+                                </ul>
+                                <p>
+                                    Her engrossed deficient northward and neglected favourite newspaper. But use peculiar produced concerns ten.
                                 </p>
                                 <div class="progress-box">
                                     <h5>Raised $57,089<span class="pull-right">Goal $50,000</span></h5>
@@ -845,135 +543,88 @@
 
     <!-- Start Event
     ============================================= -->
-    <div class="event-area bg-gray default-padding">
+    <div class="event-area default-padding bg-gray">
         <div class="container">
             <div class="row">
                 <div class="site-heading text-center">
                     <div class="col-md-8 col-md-offset-2">
-                        <h2>Our Event:</h2>
+                        <h2>Our Event</h2>
                         <p>
-                            Connect with our community and explore our upcoming events to find ways to get involved and make a difference.
+                            Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. 
                         </p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="event-items inner-cell event-carousel owl-carousel owl-theme">
+                    <div class="event-items event-carousel-single owl-carousel owl-theme">
                         <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600-6.png" alt="Thumb">
-                            </div>
-                            <div class="info">
-                                <div class="date">
-                                    29 Oct <span>2024</span>
+                            <div class="thumb bg-cover col-md-6" style="background-image: url(assets/img/800x800.png);"></div>
+                            <div class="info col-md-6">
+                                <div class="meta">
+                                    <ul>
+                                        <li><i class="fas fa-calendar"></i> 12 Oct <span>2018</span></li>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i> King Street, Melbourne
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-clock"></i> 8:00 - 16:00
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="content">
-                                    <h4>
-                                        <a href="#">Annual Conference:</a>
-                                    </h4>
-                                    <div class="meta">
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-map-marker-alt"></i>Türkiye - Istanbul
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-clock"></i> 10:00 - 16:00
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <p>
-                                        Celebrating a year of impact. Join us as we reflect on our achievements and look ahead to the future.  
-                                    </p>
-                                    <a class="btn btn-theme effect btn-sm" href="#">Learn more <i class="fas fa-angle-right"></i></a>
-                                </div>
+                                <h2>
+                                    <a href="#">Paid hill fine ten now love</a>
+                                </h2>
+                                <p>
+                                    An sincerity so extremity he additions. Her yet there truth merit. Mrs all projecting favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.   
+                                </p>
+                                <a class="btn btn-theme effect btn-sm" href="#">Learn more <i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600-10.png" alt="Thumb">
-                            </div>
-                            <div class="info">
-                                <div class="date">
-                                    23 Nov <span>2024</span>
+                            <div class="thumb bg-cover col-md-6" style="background-image: url(assets/img/800x800.png);"></div>
+                            <div class="info col-md-6">
+                                <div class="meta">
+                                    <ul>
+                                        <li><i class="fas fa-calendar"></i> 12 Oct <span>2018</span></li>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i> King Street, Melbourne
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-clock"></i> 8:00 - 16:00
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="content">
-                                    <h4>
-                                        <a href="#">Charity dinner:</a>
-                                    </h4>
-                                    <div class="meta">
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-map-marker-alt"></i>Canada - Ottawa
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-clock"></i>15:00 - 17:00
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <p>
-                                        Join us for an evening of giving and connect with our community at our Charity Dinner.
-                                    </p>
-                                    <a class="btn btn-theme effect btn-sm" href="#">Learn more <i class="fas fa-angle-right"></i></a>
-                                </div>
+                                <h2>
+                                    <a href="#">Mutual living ask extent</a>
+                                </h2>
+                                <p>
+                                     An sincerity so extremity he additions. Her yet there truth merit. Mrs all projecting favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.  
+                                </p>
+                                <a class="btn btn-theme effect btn-sm" href="#">Learn more <i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600-11.png" alt="Thumb">
-                            </div>
-                            <div class="info">
-                                <div class="date">
-                                    05 Jun <span>2025</span>
+                            <div class="thumb bg-cover col-md-6" style="background-image: url(assets/img/800x800.png);"></div>
+                            <div class="info col-md-6">
+                                <div class="meta">
+                                    <ul>
+                                        <li><i class="fas fa-calendar"></i> 12 Oct <span>2018</span></li>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i> King Street, Melbourne
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-clock"></i> 8:00 - 16:00
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="content">
-                                    <h4>
-                                        <a href="#">Charity Craft Fair:</a>
-                                    </h4>
-                                    <div class="meta">
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-map-marker-alt"></i>Türkiye - Gaziantep
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-clock"></i>10:00 - 15:00
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <p>
-                                        Discover one-of-a-kind treasures and support local artisans at our Charity Craft Fair. 
-                                    </p>
-                                    <a class="btn btn-theme effect btn-sm" href="#">Learn more <i class="fas fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600-12.png" alt="Thumb">
-                            </div>
-                            <div class="info">
-                                <div class="date">
-                                    22 Dec <span>2025</span>
-                                </div>
-                                <div class="content">
-                                    <h4>
-                                        <a href="#">Cultural Seminar:</a>
-                                    </h4>
-                                    <div class="meta">
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-map-marker-alt"></i>Türkiye - Istanbul
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-clock"></i> 12:00 - 17:00
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <p>
-                                        Immerse yourself in the rich culture of Istanbul at our upcoming symposium.
-                                    </p>
-                                    <a class="btn btn-theme effect btn-sm" href="#">Learn more <i class="fas fa-angle-right"></i></a>
-                                </div>
+                                <h2>
+                                    <a href="#">Theirs expect dinner</a>
+                                </h2>
+                                <p>
+                                     An sincerity so extremity he additions. Her yet there truth merit. Mrs all projecting favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.  
+                                </p>
+                                <a class="btn btn-theme effect btn-sm" href="#">Learn more <i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -983,13 +634,140 @@
     </div>
     <!-- End Event -->
 
+    <!-- Start Portfolio
+    ============================================= -->
+    <div class="portfolio-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="site-heading text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Best Gallery</h2>
+                        <p>
+                            Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-items-area inner-title text-center">
+                <div class="row">
+                    <div class="col-md-12 portfolio-content">
+                        <div class="mix-item-menu active-theme text-center">
+                            <button class="active" data-filter="*">All</button>
+                            <button data-filter=".development">Food</button>
+                            <button data-filter=".design">Home</button>
+                            <button data-filter=".photography">Education</button>
+                            <button data-filter=".branding">Blood</button>
+                            <button data-filter=".video">Water</button>
+                        </div>
+                        <!-- End Mixitup Nav-->
+
+                        <div class="row magnific-mix-gallery masonary">
+                            <div id="portfolio-grid" class="portfolio-items col-3">
+                                <div class="pf-item branding photography">
+                                    <div class="item-inner">
+                                        <img src="assets/img/500x700.png" alt="Thumb"/>
+                                        <div class="overlay">
+                                            <div class="view-list">
+                                                <h4>Collect Food</h4>
+                                                <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                                <a href="#"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>        
+                                    </div>
+                                </div>
+                                <div class="pf-item video wide development">
+                                    <div class="item-inner">
+                                        <img src="assets/img/800x800.png" alt="Thumb"/>
+                                        <div class="overlay">
+                                            <div class="view-list">
+                                                <h4>Donate Blood</h4>
+                                                <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                                <a href="#"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>           
+                                    </div>
+                                </div>
+                                <div class="pf-item design photography">
+                                    <div class="item-inner">
+                                        <img src="assets/img/800x800.png" alt="Thumb"/>
+                                        <div class="overlay">
+                                            <div class="view-list">
+                                                <h4>Water Supply</h4>
+                                                <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                                <a href="#"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>           
+                                    </div>
+                                </div>
+                                <div class="pf-item branding video">
+                                    <div class="item-inner">
+                                        <img src="assets/img/500x700.png" alt="Thumb"/>
+                                        <div class="overlay">
+                                            <div class="view-list">
+                                                <h4>Child Education</h4>
+                                                <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                                <a href="#"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>           
+                                    </div>
+                                </div>
+                                <div class="pf-item design photography">
+                                    <div class="item-inner">
+                                        <img src="assets/img/500x700.png" alt="Thumb"/>
+                                        <div class="overlay">
+                                            <div class="view-list">
+                                                <h4>Rebuild Home</h4>
+                                                <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                                <a href="#"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>           
+                                    </div>
+                                </div>
+                                <div class="pf-item branding design development">
+                                    <div class="item-inner">
+                                        <img src="assets/img/800x800.png" alt="Thumb"/>
+                                        <div class="overlay">
+                                            <div class="view-list">
+                                                <h4>Donate Money</h4>
+                                                <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                                <a href="#"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>           
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Portfolio -->
+
+    <!-- Start Banner 
+    ============================================= -->
+    <div class="video-bg-live barber bg-fixed text-light padding-xl" style="background-image: url(assets/img/2440x1578.png);">
+        <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=UE9UvT5ujyg',containment:'.video-bg-live', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:90, opacity:1, quality:'default'}"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="info">
+                        <h2>We’ve funded 120,00 charity projects for 20M people around the world.</h2>
+                        <a class="btn btn-theme effect btn-sm" href="#">Join with us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- End Banner -->
+
     <!-- Start Make Donation 
     ============================================= -->
     <div class="donation-form default-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 form">
-                    <h2>Make a donation now:</h2>
+                    <h2>Make a donation now</h2>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">Donation Details</h3>
@@ -1073,7 +851,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 faq-items text-center">
-                    <h2>Frequently Asked Questions:</h2>
+                    <h2>FAQ</h2>
                     <!-- Start Accordion -->
                     <div class="acd-items acd-arrow">
                         <div class="panel-group symb" id="accordion">
@@ -1081,17 +859,17 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#ac1">
-                                            What kind of humanitarian aid does SENED provide?
+                                            Do I need a business plan?
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="ac1" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <p>
-                                            SENED provides a variety of humanitarian aid to those in need, including:
+                                            She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down.For request general express unknown are.
                                         </p>
                                         <p>
-                                            1-Emergency Relief: Providing essential items like food, water, shelter, and medical supplies during crises. 2-Winter Aid: Distributing warm clothing, blankets, and heating supplies to help families stay warm during the winter months. 3-Support for Orphans and Refugees: Offering educational resources, healthcare, and psychosocial support to vulnerable children and families. 4-Development Projects: Implementing sustainable initiatives to improve living conditions and promote self-sufficiency in disadvantaged communities. 
+                                             He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but. Questions am sincerity zealously concluded consisted or no gentleman it. 
                                         </p>
                                     </div>
                                 </div>
@@ -1100,17 +878,17 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#ac2">
-                                            How can I donate to SENED? 
+                                            How long should a business plan be? 
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="ac2" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <p>
-                                            You can donate to SENED through various channels:
+                                            She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down.For request general express unknown are.
                                         </p>
                                         <p>
-                                            1-Online: Visit our website and click the "Donate Now" button to make a secure online donation. 2-Bank Transfer: Transfer funds directly to our bank account using the details provided on our website. 3-In-Person: Visit our office during working hours to make a cash or check donation. 4-Other Methods: Explore other donation options like donating via phone or mail by contacting us through the information provided on our website. 
+                                             He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but. Questions am sincerity zealously concluded consisted or no gentleman it. 
                                         </p>
                                     </div>
                                 </div>
@@ -1119,17 +897,17 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#ac3">
-                                            Where does SENED operate?
+                                            What goes into a business plan?
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="ac3" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <p>
-                                            SENED primarily operates in the Middle East, with a focus on providing aid to families in need in Tripoli, Palestine, Syria, and Yemen.
+                                            She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down.For request general express unknown are.
                                         </p>
                                         <p>
-                                            We also have a strong presence in Canada, where we connect Canadians with opportunities to support our mission.
+                                             He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but. Questions am sincerity zealously concluded consisted or no gentleman it. 
                                         </p>
                                     </div>
                                 </div>
@@ -1138,17 +916,17 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#ac4">
-                                            Can I volunteer with SENED? 
+                                            Where do I start? 
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="ac4" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <p>
-                                            Absolutely! We welcome volunteers who are passionate about making a difference.
+                                            She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down.For request general express unknown are.
                                         </p>
                                         <p>
-                                            You can find information about volunteering opportunities and how to apply on our website's "Get Involved" or "Volunteer" page.
+                                             He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but. Questions am sincerity zealously concluded consisted or no gentleman it. 
                                         </p>
                                     </div>
                                 </div>
@@ -1169,9 +947,9 @@
             <div class="row">
                 <div class="site-heading text-center">
                     <div class="col-md-8 col-md-offset-2">
-                        <h2>Meet Our Team:</h2>
+                        <h2>Meet our Volunteers</h2>
                         <p>
-                            Get to know the individuals driving our work. 
+                            Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. 
                         </p>
                     </div>
                 </div>
@@ -1181,17 +959,17 @@
                     <div class="team-carousel-items owl-carousel owl-theme">
                         <div class="item">
                             <div class="col-md-6 thumb">
-                                <img src="assets/img/800x600-3.png" alt="Team">
+                                <img src="assets/img/800x600.png" alt="Team">
                             </div>
                             <div class="col-md-6 info title">
-                                <h3>Mohammad Karhani</h3>
-                                <h5>international operations manager</h5>
+                                <h3>Moana Siqual</h3>
+                                <h5>Blood Donor</h5>
                                 <ul>
-                                    <li>Date of joining:<span>2020</span></li>
-                                    <li>Location: <span>Türkiye - Istanbul</span></li>
+                                    <li>Date of birth: <span>12 Jan, 1995</span></li>
+                                    <li>Location: <span>California, Dubai</span></li>
                                 </ul>
                                 <p>
-                                    With over 15 years of experience in business consulting and relief work, our Director of International Operations leads the expansion of our relief efforts in the Middle East. He brings extensive expertise in management, marketing, and disaster response to ensure our mission's success.
+                                    Contented attending smallness it oh ye unwilling. Turned favour man two but lovers. Suffer should if waited common person little oh. Improved civility graceful sex few smallest screened settling. Likely active her warmly has
                                 </p>
                                 <div class="social">
                                     <ul>
@@ -1213,17 +991,17 @@
                         </div>
                         <div class="item">
                             <div class="col-md-6 thumb">
-                                <img src="assets/img/800x600-4.png" alt="Team">
+                                <img src="assets/img/800x600.png" alt="Team">
                             </div>
                             <div class="col-md-6 info title">
-                                <h3>Ahmed Kabarra</h3>
-                                <h5>chairman</h5>
+                                <h3>Anu Sparkle</h3>
+                                <h5>Teacher of children</h5>
                                 <ul>
-                                    <li>Date of joining:<span>2020</span></li>
-                                    <li>Location:<span>Canada - Ottawa</span></li>
+                                    <li>Date of birth: <span>12 Jan, 1995</span></li>
+                                    <li>Location: <span>California, Kenya</span></li>
                                 </ul>
                                 <p>
-                                    Ahmad is a dedicated humanitarian who has worked with organizations in over 15 countries to improve the lives of the less fortunate. After settling in Canada in 2014, he founded Mission Relief to provide aid to families in his hometown and neighboring countries.
+                                    Contented attending smallness it oh ye unwilling. Turned favour man two but lovers. Suffer should if waited common person little oh. Improved civility graceful sex few smallest screened settling. Likely active her warmly has
                                 </p>
                                 <div class="social">
                                     <ul>
@@ -1245,17 +1023,17 @@
                         </div>
                         <div class="item">
                             <div class="col-md-6 thumb">
-                                <img src="assets/img/800x600-5.png" alt="Team">
+                                <img src="assets/img/800x600.png" alt="Team">
                             </div>
                             <div class="col-md-6 info title">
-                                <h3>Zubaida Ghamravi Kabara</h3>
-                                <h5>Lebanon Coordinator</h5>
+                                <h3>Dunald Minia</h3>
+                                <h5>The organizer</h5>
                                 <ul>
-                                    <li>Date of birth: <span>2020</span></li>
-                                    <li>Location: <span>Lebanon - Beirut</span></li>
+                                    <li>Date of birth: <span>12 Jan, 1995</span></li>
+                                    <li>Location: <span>California, USA</span></li>
                                 </ul>
                                 <p>
-                                    Mother of 3 and grandmother of 8 beautiful children. A social activist who is always happy to give, so she became addicted to helping families in need and about 15 years ago we started an orphan sponsorship project. Zubaida never hesitated to help those who asked for her help in any way she could.
+                                    Contented attending smallness it oh ye unwilling. Turned favour man two but lovers. Suffer should if waited common person little oh. Improved civility graceful sex few smallest screened settling. Likely active her warmly has
                                 </p>
                                 <div class="social">
                                     <ul>
@@ -1289,9 +1067,9 @@
             <div class="row">
                 <div class="site-heading text-center">
                     <div class="col-md-8 col-md-offset-2">
-                        <h2>Recent Blog:</h2>
+                        <h2>Recent Blog</h2>
                         <p>
-                            Read inspiring stories from the field and learn how your support is making a difference.
+                            Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. 
                         </p>
                     </div>
                 </div>
@@ -1302,7 +1080,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="blog-single-left-sidebar.html">
-                                    <img src="assets/img/800x600-9.png" alt="Thumbnail">
+                                    <img src="assets/img/800x600.png" alt="Thumbnail">
                                     <div class="overlay-icon">
                                         <i class="fa fa-images"></i>
                                     </div>
@@ -1315,22 +1093,22 @@
                                     </div>
                                     <div class="title">
                                         <h4>
-                                            <a href="blog-single-left-sidebar.html">The Power of Human Connection:</a>
+                                            <a href="blog-single-left-sidebar.html">Disposing commanded dashwoods</a>
                                         </h4>
                                         <div class="meta">
                                             <ul>
                                                 <li>
-                                                    <a href="#"><i class="fas fa-user"></i>Ahmad</a>
+                                                    <a href="#"><i class="fas fa-user"></i> Admin</a>
                                                 </li>
                                                 <li>
-                                                    <i class="fas fa-calendar-alt"></i>2024
+                                                    <i class="fas fa-calendar-alt"></i> 2 Aug, 2018
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <p>
-                                    In this blog post, we share inspiring stories from our volunteers about their experiences working with our organization and the impact they have made in the lives of others.
+                                    Chicken no wishing waiting am. Say concerns dwelling graceful six humoured. Whether mr up savings talking an. Active mutual nor father mother exeter
                                 </p>
                                 <a href="blog-single-left-sidebar.html">read more <i class="fas fa-angle-right"></i></a>
                             </div>
@@ -1340,7 +1118,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="blog-single-left-sidebar.html">
-                                    <img src="assets/img/800x600-8.png" alt="Thumbnail">
+                                    <img src="assets/img/800x600.png" alt="Thumbnail">
                                     <div class="overlay-icon">
                                         <i class="fa fa-video"></i>
                                     </div>
@@ -1353,22 +1131,22 @@
                                     </div>
                                     <div class="title">
                                         <h4>
-                                            <a href="blog-single-left-sidebar.html">SENED, Committed to Sustainable Development:</a>
+                                            <a href="blog-single-left-sidebar.html"> Goodness as reserved raptures use set</a>
                                         </h4>
                                         <div class="meta">
                                             <ul>
                                                 <li>
-                                                    <a href="#"><i class="fas fa-user"></i>Mohamad</a>
+                                                    <a href="#"><i class="fas fa-user"></i> Admin</a>
                                                 </li>
                                                 <li>
-                                                    <i class="fas fa-calendar-alt"></i>2024
+                                                    <i class="fas fa-calendar-alt"></i> 2 Aug, 2018
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <p>
-                                    Winter aid is vital, but SENED is also dedicated to long-term solutions to poverty.  This article explores our sustainable development projects that empower communities.
+                                    Chicken no wishing waiting am. Say concerns dwelling graceful six humoured. Whether mr up savings talking an. Active mutual nor father mother exeter
                                 </p>
                                 <a href="blog-single-left-sidebar.html">read more <i class="fas fa-angle-right"></i></a>
                             </div>
@@ -1378,7 +1156,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="blog-single-left-sidebar.html">
-                                    <img src="assets/img/800x600-7.png" alt="Thumbnail">
+                                    <img src="assets/img/800x600.png" alt="Thumbnail">
                                     <div class="overlay-icon">
                                         <i class="fa fa-images"></i>
                                     </div>
@@ -1391,22 +1169,22 @@
                                     </div>
                                     <div class="title">
                                         <h4>
-                                            <a href="blog-single-left-sidebar.html">How Canadians are Making a Difference in the Middle East:</a>
+                                            <a href="blog-single-left-sidebar.html">Tolerably earnestly middleton</a>
                                         </h4>
                                         <div class="meta">
                                             <ul>
                                                 <li>
-                                                    <a href="#"><i class="fas fa-user"></i>Hayat</a>
+                                                    <a href="#"><i class="fas fa-user"></i> Admin</a>
                                                 </li>
                                                 <li>
-                                                    <i class="fas fa-calendar-alt"></i>2024
+                                                    <i class="fas fa-calendar-alt"></i> 2 Aug, 2018
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <p>
-                                    SENED is committed to bridging the gap between Canadians and their home countries by providing opportunities for meaningful engagement and impactful change.
+                                    Chicken no wishing waiting am. Say concerns dwelling graceful six humoured. Whether mr up savings talking an. Active mutual nor father mother exeter
                                 </p>
                                 <a href="blog-single-left-sidebar.html">read more <i class="fas fa-angle-right"></i></a>
                             </div>
@@ -1468,14 +1246,14 @@
         <div class="container">
             <div class="row">
                 <div class="f-items fv1">
-                    <div class="col-md-5 item">
+                    <div class="col-md-4 item">
                         <div class="f-item">
-                            <h4>About Us:</h4>
+                            <h4>About Us</h4>
                             <p>
-                                We provide critical humanitarian aid to vulnerable populations worldwide, from supporting orphans and refugees to delivering emergency relief. We strive to connect Canadians with opportunities to make a meaningful impact and create lasting change in their home countries.
+                                Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address did showing because sitting replied six. Had arose guest visit going off child she new.
                             </p>
                             <p>
-                                <span>Please write your email and get our updates:</span>
+                                <span>Please write your email and get our amazing updates, news and support</span>
                             </p>
                             <div class="subscribe">
                                 <form action="#">
@@ -1491,23 +1269,55 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 item">
-                        <div class="f-item link full">
-                            <h4>Quick Links:</h4>
+                    <div class="col-md-4 item">
+                        <div class="f-item recent-post">
+                            <h4>Recent Posts</h4>
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Saving & Investments</a></li>
-                                <li><a href="#">Retirements</a></li>
-                                <li><a href="#">Business Services</a></li>
-                                <li><a href="#">Markets Research</a></li>
+                                <li>
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img alt="Thumb" src="assets/img/800x800.png">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a href="#">Participate in staff meetings manage dedicated</a>
+                                        <div class="meta-title">
+                                            <span class="post-date">12 Feb, 2018</span> | By <a href="#">Author</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img alt="Thumb" src="assets/img/800x800.png">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a href="#">Future Plan &amp; Strategy for Consutruction </a>
+                                        <div class="meta-title">
+                                            <span class="post-date">12 Feb, 2018</span> | By <a href="#">Author</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img alt="Thumb" src="assets/img/800x800.png">
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <a href="#">Melancholy particular devonshire alteration</a>
+                                        <div class="meta-title">
+                                            <span class="post-date">12 Feb, 2018</span> | By <a href="#">Author</a>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-4 item">
                         <div class="f-item">
-                            <h4>twitter widget:</h4>
+                            <h4>twitter widget</h4>
                             <div class="twitter-item">
                                 <div class="twitter-content">
                                     <p>
